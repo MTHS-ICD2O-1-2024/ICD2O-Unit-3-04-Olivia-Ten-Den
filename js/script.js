@@ -7,18 +7,18 @@
 "use strict"
 
 /**
- * This function calculates the area of a trapezoid.
+ * This function converts Fahrenheit to Celsius.
  */
-function calculateVolumeOfSphere() {
+function convertFahrenheitToCelsius() {
   // input
-  const radiusOfSphere = parseFloat(
-    document.getElementById("radius-of-sphere").value
+  const degreesInFahrenheit = parseFloat(
+    document.getElementById("degrees-in-fahrenheit").value
   )
 
   // process
-  const volumeOfSphere = (4 / 3) * Math.PI * radiusOfSphere ** 3
+  const degreesInCelsius = (degreesInFahrenheit - 32) * (5/9)
 
   // output
-  document.getElementById("volume").innerHTML =
-    "The volume is: " + volumeOfSphere + " cm³"
+  document.getElementById("convert").innerHTML =
+    "The temperature in Celsius is: " + degreesInCelsius + " cm³"
 }
