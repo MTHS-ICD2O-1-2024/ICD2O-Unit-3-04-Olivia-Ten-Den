@@ -20,5 +20,5 @@ function convertFahrenheitToCelsius() {
 
   // output
   document.getElementById("convert-fahrenheit-to-celsius").innerHTML =
-    "The temperature in Celsius is: " + degreesInCelsius + " cm³"
+    "The temperature in Celsius is: " + degreesInCelsius + " °C"
 }
