@@ -16,9 +16,9 @@ function convertFahrenheitToCelsius() {
   )
 
   // process
-  const degreesInCelsius = (degreesInFahrenheit - 32) * (5/9)
+  const degreesInCelsius = (degreesInFahrenheit - 32) * (5 / 9)
 
   // output
   document.getElementById("convert-fahrenheit-to-celsius").innerHTML =
-    "The temperature in Celsius is: " + degreesInCelsius + " °C"
+    "The temperature in Celsius is: " + degreesInCelsius.toFixed(3) + " °C"
 }
